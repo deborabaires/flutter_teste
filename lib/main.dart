@@ -1,4 +1,9 @@
+//material adroid
 import 'package:flutter/material.dart';
+
+//cupertino IOS
+import 'package:flutter/cupertino.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Meu APP Flutter',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -28,7 +33,7 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: .fromSeed(seedColor: const Color.fromARGB(255, 183, 58, 154)),
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
@@ -118,5 +123,30 @@ class _MyHomePageState extends State<MyHomePage> {
         child: const Icon(Icons.add),
       ),
     );
+  }
+}
+
+//atalho stl
+class MyWidget1 extends StatelessWidget {
+  const new({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
+}
+
+//atalho stf
+class MyWidget extends StatefulWidget {
+  const new({super.key});
+
+  @override
+  State<MyWidget> createState() => _MyWidgetState();
+}
+
+class _MyWidgetState extends State<MyWidget> {
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
   }
 }
